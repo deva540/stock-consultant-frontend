@@ -12,7 +12,7 @@ function App() {
     setLoading(true);
     setAdvice(null); // Clear previous advice
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/analyze_portfolio', {
+      const response = await axios.post('https://stock-consultant-backend.onrender.com', {
         portfolio_str: portfolioData,
       });
 
